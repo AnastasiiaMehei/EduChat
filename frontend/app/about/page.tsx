@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import AnimatedBackground from '../../components/AnimatedBackground';
 import Navbar from '../../components/Navbar';
 
 interface AboutData {
@@ -34,10 +35,11 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950">
+    <div className="relative min-h-screen overflow-hidden">
+      <AnimatedBackground />
       <Navbar />
-      <main className="mx-auto max-w-4xl px-6 py-16">
-        <section className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8 shadow-2xl">
+      <main className="relative mx-auto max-w-4xl px-6 py-16">
+        <section className="rounded-3xl border border-slate-800/70 bg-slate-900/70 p-8 shadow-2xl backdrop-blur-xl">
           <h1 className="text-3xl font-semibold text-white">
             {about?.name || 'About EduChat'}
           </h1>
@@ -46,11 +48,11 @@ export default function AboutPage() {
               'EduChat is an AI-powered learning assistant designed to explain difficult topics in simple language.'}
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl bg-slate-950 p-4">
+            <div className="rounded-2xl bg-slate-950/80 p-4">
               <h2 className="font-medium text-white">Frontend</h2>
               <p className="mt-2 text-sm text-slate-400">Next.js, React, Tailwind CSS</p>
             </div>
-            <div className="rounded-2xl bg-slate-950 p-4">
+            <div className="rounded-2xl bg-slate-950/80 p-4">
               <h2 className="font-medium text-white">Backend</h2>
               <p className="mt-2 text-sm text-slate-400">
                 {about?.technologies?.join(', ') || 'NestJS, WebSocket, AI APIs'}
