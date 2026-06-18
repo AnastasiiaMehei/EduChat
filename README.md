@@ -36,10 +36,14 @@ The backend requires:
 
 - `HUGGINGFACE_API_TOKEN`
 - `HUGGINGFACE_MODEL` (optional, defaults to a working provider model)
+- `GOOGLE_CLIENT_ID` (for Google ID token verification)
+- `GOOGLE_CLIENT_SECRET` (optional for advanced Google OAuth flows)
+- `JWT_SECRET` (recommended for production)
 
 The frontend can optionally use:
 
 - `NEXT_PUBLIC_API_URL` (defaults to `http://localhost:3000`)
+- `NEXT_PUBLIC_GOOGLE_CLIENT_ID` (required for the Google sign-in button)
 
 ### 3. Run the project
 

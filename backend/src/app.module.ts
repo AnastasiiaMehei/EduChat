@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { AuthModule } from './auth/auth.module';
 import { ChatModule } from './chat/chat.module';
 
 @Module({
@@ -8,6 +9,7 @@ import { ChatModule } from './chat/chat.module';
       isGlobal: true,
       envFilePath: '.env',
     }),
+    AuthModule,
     ChatModule,
   ],
 })
