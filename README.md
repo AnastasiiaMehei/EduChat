@@ -1,6 +1,14 @@
 # EduChat
 
 EduChat is a full-stack educational assistant built with Next.js on the frontend and NestJS on the backend. The project lets users ask questions, get AI-generated answers, and view basic project information on the About page.
+<img width="720" height="359" alt="1" src="https://github.com/user-attachments/assets/e31bf827-67d7-4cc3-85e9-633411e3dc73" />
+<img width="720" height="359" alt="2" src="https://github.com/user-attachments/assets/16d004c5-0b8d-4412-ba0b-cbf4a44c135c" />
+<img width="720" height="359" alt="5" src="https://github.com/user-attachments/assets/54a88b86-64d5-425a-b782-0d6739706d9b" />
+<img width="719" height="359" alt="4" src="https://github.com/user-attachments/assets/921075c3-d2a6-4e3e-9fab-3b040bcb6eda" />
+<img width="719" height="360" alt="3" src="https://github.com/user-attachments/assets/f8112fa4-07dc-45a8-9844-a2c1358bb14f" />
+
+
+
 
 ## Project structure
 
